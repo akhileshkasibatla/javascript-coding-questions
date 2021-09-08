@@ -1,3 +1,18 @@
+/* 
+
+  Write code to print list of colors and their fruits 
+  
+  [
+    { color: 'red', fruits: [ 'apple', 'strawberries', 'cherries' ] },
+    { color: 'yellow', fruits: [ 'lemon' ] },
+    { color: 'orange', fruits: [ 'mango', 'tangerine' ] },
+    { color: 'green', fruits: [ 'kiwis', 'grapes', 'guava' ] },
+    { color: 'blue', fruits: [ 'blueberries' ] }
+  ] 
+
+
+*/
+
 const fruits = [{
 		'name': 'apple',
 		color: 'red'
