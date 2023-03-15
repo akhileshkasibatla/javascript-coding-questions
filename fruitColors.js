@@ -49,20 +49,19 @@ const fruits = [{
 		'color': 'orange'
 	}
 ];
-const colors = [...new Set(fruits.map(fruit => fruit.color))];
 const colorFruits = {};
 
-colors.forEach(color => {
-	colorFruits[color] = {
-		color,
-		fruits: []
-	};
+fruits.map(({ color }) => {
+	if (!colorFruits.hasOwnProperty(color)) {
+		colorFruits[color] = {
+			color,
+			fruits: [],
+		};
+	}
 });
 
-fruits.map(fruit => {
-	const color = fruit.color;
-	const colorFruit = colorFruits[color];
-	colorFruits[color].fruits.push(fruit.name);
+fruits.map(({ color, name }) => {
+	colorFruits[color].fruits.push(name);
 });
 
 console.log(Object.values(colorFruits));
