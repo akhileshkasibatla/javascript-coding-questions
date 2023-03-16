@@ -15,8 +15,8 @@ var findMedianSortedArrays = function(nums1, nums2) {
     let i = 0;
     let j = 0;
     let count = 0;
-    let head = null;
-    let tail;
+    let head = 0;
+    let tail = 0;
     let totalLength = nums1.length + nums2.length;
     
     while(count <= totalLength / 2) {
@@ -45,3 +45,11 @@ var findMedianSortedArrays = function(nums1, nums2) {
         return head;
     }
 };
+
+
+/****************************************************************************
+
+Another approach of solving this problem is to merge two arrays and sort.
+Find the median index and find the median.
+
+****************************************************************************/
